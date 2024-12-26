@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="135dp"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/login"
+        android:src="@drawable/user_icon" />
+
+    <EditText
+
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/user_icon"
+        android:padding="10dp"
+        android:background="@drawable/input_background" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:drawableStart="@drawable/password_icon"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/input_background"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:drawableLeft="@drawable/submit_icon"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/primary"
+        android:layout_gravity="center"
+        android:paddingTop="12dp" />
+</LinearLayout>
