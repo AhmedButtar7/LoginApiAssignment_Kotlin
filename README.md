@@ -78,11 +78,14 @@ Open the project in Android Studio.
 Update the base URL in the RetrofitInstance object:
 kotlin
 Copy code
+
 const val BASE_URL = "http://192.168.100.102:8000/api/"
 Build and run the application on an emulator or physical device.
 API Endpoints
 Authentication
+
 Signup: POST /api/users/signup/
+
 Request Body: { "email": "example@example.com", "username": "user", "password": "password123" }
 Login: POST /api/users/login/
 Request Body: { "email": "example@example.com", "password": "password123" }
@@ -91,17 +94,21 @@ Retrieve Password: POST /api/users/forgot/
 Request Body: { "email": "example@example.com" }
 Key Files
 Backend
+
 views.py: Handles API logic, including sending emails.
 models.py: Defines the user schema.
 urls.py: Defines API routes.
 settings.py: Configures email backend and database.
 Frontend
+
 ForgotPasswordActivity.kt: Implements the "Forgot Password" feature.
 LoginActivity.kt and SignupActivity.kt: Handle login and signup processes.
 RetrofitInstance.kt: Configures Retrofit for API calls.
+
 Notes
 Ensure that the backend server runs on the same network as the Android device or emulator.
 For production, use HTTPS instead of HTTP for secure communication.
 Update SMTP credentials to match your email provider.
+
 License
 This project is licensed under the MIT License. Feel free to use and modify as needed.
